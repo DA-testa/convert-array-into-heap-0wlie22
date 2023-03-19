@@ -28,10 +28,10 @@ def build_heap(data):
 def main():
     # Input source and data
     source = input().strip()
-    if source == 'K':
+    if source[0:1] == 'I':
         n = int(input())
         data = list(map(int, input().split()))
-    elif source == 'F':
+    elif source[0:1] == 'F':
         with open(input().strip(), 'r') as f:
             n = int(f.readline().strip())
             data = list(map(int, f.readline().strip().split()))
