@@ -32,7 +32,7 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
     elif source[0:1] == 'F':
-        with open(input().strip(), 'r') as f:
+        with open("tests/" + input().strip(), 'r') as f:
             n = int(f.readline().strip())
             data = list(map(int, f.readline().strip().split()))
     else:
